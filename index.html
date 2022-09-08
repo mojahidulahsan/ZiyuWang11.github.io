@@ -1,44 +1,38 @@
 ---
 layout: default
 
-features:
-- icon: fa-gem
-  title: Portitor ullamcorper
-  excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-- icon: fa-paper-plane
-  title: Sapien veroeros
-  excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-- icon: solid fa-rocket
-  title: Quam lorem ipsum
-  excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-- icon: solid fa-signal
-  title: Sed magna finibus
-  excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-
 posts:
 - image: /images/pic01.jpg
-  title: Interdum aenean
+  title: IMC Power Simulator
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
   url: "#"
 - image: /images/pic02.jpg
-  title: Nulla amet dolore
+  title: SCA - Model Extraction Attack on IMC
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
   url: "#"
 - image: /images/pic03.jpg
-  title: Tempus ullamcorper
+  title: SCA - Stealing Private Input to IMC
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
   url: "#"
 - image: /images/pic04.jpg
-  title: Sed etiam facilis
+  title: 9T-SRAM IMC Macro
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
   url: "#"
 - image: /images/pic05.jpg
-  title: Feugiat lorem aenean
+  title: Fingerprint PUF
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
   url: "#"
 - image: /images/pic06.jpg
-  title: Amet varius aliquam
+  title: RM-NTT IMC Accelerator for Homomorphic Computing
   excerpt: Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+  url: "#"
+
+researchs:
+- image: /images/pic01.jpg
+  excerpt: Lu Group @2022.
+  url: "#"
+- image: /images/pic02.jpg
+  excerpt: RRAM circuit.
   url: "#"
 ---
 
@@ -62,26 +56,23 @@ posts:
 	<section id="banner">
 		<div class="content">
 			<header>
-				<h1 style="font-size: 60px; font-family: Bodoni; color: rgb(6, 13, 13)">Ziyu Wang</h1>
-				<h1 style="font-size: 50px; font-family: SimSong; color: rgb(6, 13, 13)"> 王子瑜 </h1>
+				<h1 style="font-size: 40px; font-family: Bodoni;">Ziyu Wang</h1>
 				{% comment %}
 				<p>A urna sed morbi natoque enim cubilia</p>
 				{% endcomment %}
 			</header>
 
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+				<li><a href="https://www.linkedin.com/in/wzy822/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
 			</ul>
-			<p>Crimson flames tied through my ear <br />
-				Rolling high and mighty traps <br />
-				Pounced with fire and flaming roads <br />
-				Using idea as my maps</p>
+			<p>I am a 4th-year PhD candidate in Electrical and Computer Enginnering, the University of Michigan, Ann Arbor. 
+				I am working with <a href="http://www-personal.umich.edu/~wluee/"> Prof. Wei Lu </a>.  <br>
+				I received bachelor degree of Enginnering from Tsinghua University.  <br>
+				My research interests include vulnerability and security analysis of non-volatile memory based analog in-memory computing system.</p>
 			<ul class="actions">
-				<li><a href="https://www.google.com" class="button large">Learn More</a></li>
+				<li><a href="{{ site.baseurl }}/files/ZiyuWang_090122.pdf" class="button large">My Resume</a></li>
 			</ul>
 		</div>
 		<span class="image object">
@@ -89,18 +80,156 @@ posts:
 		</span>
 	</section>
 
+
 <!-- Section -->
 	<section>
 		<header class="major">
-			<h2>Erat lacinia</h2>
+			<h2>Research Briefing</h2>
 		</header>
-		{% include components/features.html features=page.features %}
+		
+		<p>I am a 4th-year PhD candidate in Electrical and Computer Enginnering, the University of Michigan, Ann Arbor. 
+			I am working with <a href="http://www-personal.umich.edu/~wluee/"> Prof. Wei Lu </a>. 
+			I received bachelor degree of Enginnering from Tsinghua University.  <br>
+			My research interests include vulnerability and security analysis of non-volatile memory based analog in-memory computing system.</p>
+
+		
+		{% include components/researchs.html researchs=page.researchs %}
+	</section>
+	
+<!-- Section -->
+	<section>
+		<header class="major">
+			<h2>Education</h2>
+		</header>
+
+		<div class="container">
+			<div class="circle">
+				<img src="{{ site.baseurl }}/logo/umich.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 7px; color: #00274c;">Aug 2019 - Present </h3>
+				<h3 style="margin: 7px; color: #00274c;">University of Michigan, Ann Arbor</h3>
+				<h3 style="margin: 7px; color: #00274c;">Ph.D. candidate in Electrical and Computer Enginnering</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle">
+				<img src="{{ site.baseurl }}/logo/umich.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 7px; color: #00274c;">June 2018 - Sept 2018 </h3>
+				<h3 style="margin: 7px; color: #00274c;">University of Michigan, Ann Arbor</h3>
+				<h3 style="margin: 7px; color: #00274c;">Undergraduate research intern</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle">
+				<img src="{{ site.baseurl }}/logo/thu.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 7px; color: #82318E;">Aug 2015 - July 2019 </h3>
+				<h3 style="margin: 7px; color: #82318E;">Tsinghua University</h3>
+				<h3 style="margin: 7px; color: #82318E;">Bachelor of Engineering in Material Science and Engineering</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle">
+				<img src="{{ site.baseurl }}/logo/thu.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 7px; color: #82318E;">Sept 2017 - July 2019 </h3>
+				<h3 style="margin: 7px; color: #82318E;">Tsinghua University</h3>
+				<h3 style="margin: 7px; color: #82318E;">Minor in Computer Technology and Application</h3>
+			</div>
+		</div>
+
 	</section>
 
 <!-- Section -->
 	<section>
 		<header class="major">
-			<h2>Ipsum sed dolor</h2>
+			<h2>Selected Publication</h2>
+		</header>
+		<p style="font-size: 1.25em;"> 
+			[1] <span style="font-weight: bold;">Ziyu Wang</span>, Fan-hsuan Meng, Yongmo Park, Jason K. Eshraghian and Wei D. Lu,
+			"Side-channel attack analysis on in-memory computing architectures," arXiv preprint: <a href="https://arxiv.org/abs/2209.02792">2209.02792</a>. <br>
+			
+			[2] <span style="font-weight: bold;">Ziyu Wang</span>, Xiaojian Zhu, Supreet Jaloka, Brine Cline and Wei D. Lu,
+			"Physical Unclonable Function Systems Based on Pattern Transfer of Fingerprint-Like Patterns," 
+			in <span style="font-style: italic;">IEEE Electron Device Letters</span>, vol. 43, no. 4, pp. 655-658, 
+			April 2022, doi: <a href="https://ieeexplore.ieee.org/abstract/document/9721242">10.1109/LED.2022.3154655</a>. <br>
+
+			[3] Yongmo Park, <span style="font-weight: bold;">Ziyu Wang</span>, Sangmin Yoo and Wei D. Lu, 
+			"RM-NTT: An RRAM-Based Compute-in-Memory Number Theoretic Transform Accelerator," 
+			in <span style="font-style: italic;">IEEE Journal on Exploratory Solid-State Computational Devices and Circuits</span>, 
+			2022, doi: <a href="https://ieeexplore.ieee.org/document/9870678">10.1109/JXCDC.2022.3202517</a>. <br>
+			
+			[4] Sangmin Yoo, Yongmo Park, <span style="font-weight: bold;">Ziyu Wang</span>, Yuting Wu, Sakeeth Medepalli, Wesley Thio and Wei D. Lu, 
+			"Columnar Learning Networks for Multisensory Spatiotemporal Learning," 
+			in <span style="font-style: italic;">Adv. Intell. Syst </span>, in press. <br>
+		</p>
+	</section>
+
+<!-- Section -->
+	<section>
+		<header class="major">
+			<h2>Featured Research</h2>
 		</header>
 		{% include components/posts.html posts=page.posts %}
+	</section>
+
+
+<!-- Section -->
+	<section>
+		<header class="major">
+			<h2>Honors and Awards</h2>
+		</header>
+
+		<div class="container">
+			<div class="square", style="width: 80px; height: 80px;">
+				<img src="{{ site.baseurl }}/logo/wcg.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 0%;">WCG 2019 - WarCraft III Top 512 Round in China </h3>
+				<p>World Cyber Games (WCG), May 2019<br>
+				WCG is the most prestigious global eSport tournament for WarCraft III.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle", style="width: 80px; height: 80px;">
+				<img src="{{ site.baseurl }}/logo/thu.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 0%;">Undergraduate Scholarship of Comprehensive Excellence</h3>
+				<p>Tsinghua University, Oct 2018<br>
+				Awarded top 5% students at Tsinghua University.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle", style="width: 80px; height: 80px;">
+				<img src="{{ site.baseurl }}/logo/edu.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 0%;">National Scholarship</h3>
+				<p>Ministry of Education, China, Oct 2017<br>
+				Awarded top 5% students at their undergraduate niversity.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="circle", style="width: 80px; height: 80px;">
+				<img src="{{ site.baseurl }}/logo/thu.png" alt="" />
+			</div>
+			<div class="describe">
+				<h3 style="margin: 0%;">Undergraduate Scholarship of Academic Excellence</h3>
+				<p>Tsinghua University, Oct 2016<br>
+				Awarded top 10% students at Tsinghua University.</p>
+			</div>
+		</div>
+		
 	</section>
