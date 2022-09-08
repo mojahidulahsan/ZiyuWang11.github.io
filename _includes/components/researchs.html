@@ -36,7 +36,7 @@
 		{% for research in include.researchs %}
 
 			<article>
-				<a href="{{ research.url }}" class="image"><img src="{{ research.image }}" alt="" /></a>
+				<a class="image"><img src="{{ research.image }}" alt="" /></a>
 				<p>{{ research.excerpt | remove: "<p>" | remove: "</p>" }}</p>
 			</article>
 
