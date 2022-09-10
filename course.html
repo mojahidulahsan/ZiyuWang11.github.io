@@ -35,15 +35,14 @@ layout: page
 </ul>
 
 <hr class="major" />
-<span class="image main", id="sram"><img src="{{ site.baseurl }}/images/07-sram.png" alt="" /></span>
+<span class="image main", id="sram"><img src="{{ site.baseurl }}/images/course-r10k.png" alt="" /></span>
 <h2>A 2-way Out-of-Order Superscalar Processor with R10k-Style Renaming</h2>
 <h3>EECS 470 | Computer Architecture</h3>
 <h3>Collaborated with Zhuo Chen, Xinxin Wang.</h3>
 <ul style="font-weight: bold;">
-	<li>Fast, reliable and flexible dynamic power trace simulation for RRAM-based IMC DNN inference engine.</li>
-	<li>Reconfigurable interface to PyTorch DNN model and real word input data, along with built-in circuit simulator.</li>
-	<li>The first mixed-signal simulator design for fast dynamic power behavior of RRAM circuits.</li>
-	<li>Optimization with a C/C++ CUDA framework for fast power feature generation. (in progress)</li>
+	<li>Designed ans synthesized MIPS R10K style renaming microprocessor in SystemVerilog.</li>
+	<li>The two-ways super scalar processor has seven stages for out-of-order operation.</li>
+	<li>Implemented instruction pre-fetching, gshare predictor, store-to-load forwarding in the load-store queue and write-back data cache to improve throughput.</li>
 </ul>
 
 <hr class="major" />
@@ -51,9 +50,9 @@ layout: page
 <h2></h2>
 <h3>EECS 511 | Noise Shaping SAR ADCs.</h3>
 <ul style="font-weight: bold;">
-	<li>Desgined a Strong Arm comparator with physical layout. The comparator achieves 24.2 uW power consumption, 
+	<li>Designed a Strong Arm comparator with physical layout. The comparator achieves 24.2 uW power consumption, 
 		0.48 mV input offset and 5.48E-10 meta-stability rate at the worst corner case.</li>
-	<li>Modeled a set-and-down SAR ADC with redundency and noise shaping.</li>
+	<li>Modeled a set-and-down SAR ADC with redundancy and noise shaping.</li>
 	<li>The noise shaping SAR ADC achieve the peak SNDR of 62.7779 dB.</li>
 </ul>
 

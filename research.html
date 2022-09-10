@@ -23,17 +23,17 @@ layout: page
 </header>
 
 <span class="image main"><img src="{{ site.baseurl }}/images/research-intro.png" alt="" /></span>
-<p style="font-size: small; text-align: right;">	(Images credit to M. A. Zidan, J. P. Strachan, F. Cai, J. M. Correll, S. H. Lee, Z. Wang)</p>
+<p style="font-size: small; text-align: right;">	(Images credit to M. A. Zidan, F. Cai, J. M. Correll, S. H. Lee, Z. Wang)</p>
 
 <p>The conventional computing architectures today are facing von Neumann bottleneck, which 
-	refers high ernergy cost and low latency associated with data transfer between the memory 
-	and the processor. Memoristor (also called resistive random access memory, RRAM), a two terminal device with its reconfiguration driven by internal 
+	refers high energy cost and low latency associated with data transfer between the memory 
+	and the processor. Memristor (also called resistive random access memory, RRAM), a two-terminal device with its reconfiguration driven by internal 
 	ion redistribution, shows potential in building new computing systems thanks to its non-volatile, 
 	analog switching, low power operation and high-density integration property.
 </p>
 <p>Since the physically realization of the memristive device in 2008 by HP, countless research papers have been 
 	published with incredible contribution to device physics, circuit integration and architecture implementation. 
-	At the new era of computing, 1T1R integrated memristor with an analog/digital interface are proved offer great performance and 
+	At the new era of computing, 1T1R integrated memristors with an analog/digital interfaces are proved offer great performance and 
 	energy advantages in vector-matrix multiplication acceleration, which is the core of state-of-the-art 
 	deep neural networks (DNNs). No doubt that memristive systems will bring a new computing paradigm as abundant 
 	research and products are carried out in both academia and industry.
@@ -58,11 +58,11 @@ layout: page
 	<li>The first mixed-signal simulator design for fast dynamic power behavior of RRAM circuits.</li>
 	<li>Optimization with a C/C++ CUDA framework for fast power feature generation. (in progress)</li>
 </ul>
-<p>State-of-the-art DNNs, with 10s of millios of weights, may require thousands of IMC tiles, making it imprectical to 
+<p>State-of-the-art DNNs, with 10s of millions of weights, may require thousands of IMC tiles, making it impractical to 
 	perform analog SPICE simulation that can account for all parasitics. Indeed, the hardware performance is often 
 	estimated through simulators the integrate simplified device and circuit models to produce inference accuracy, 
 	hardware power and area, with rapid iteration times. Previously reported architecture-level simulators mainly 
-	focus on inference accuracy and global hardware perfomance. However, dynamic power and other time-varying information 
+	focus on inference accuracy and global hardware performance. However, dynamic power and other time-varying information 
 	is useful in performing side-channel attack and thermal aware optimization.
 </p>
 <p>To provide reliable power simulations, we synthesized the deployed digital components (e.g. adder, register) and 
@@ -81,7 +81,7 @@ layout: page
 <h2>Side-Channel Attack: DNN Model Extraction Attack on IMC Architectures</h2>
 <ul style="font-weight: bold;">
 	<li>Demonstrated algorithms to extract model architecture from power trace without any prior knowledge of DNN models.</li>
-	<li>Layer type and sequences, input/output size of each layer, size of convlution kernels and pooling layers can be extracted.</li>
+	<li>Layer type and sequences, input/output size of each layer, size of convolution kernels and pooling layers can be extracted.</li>
 	<li>Proposed countermeasures at different levels to eliminate the correlation between side-channel leakage and secret model.</li>
 	<li>The first work on side-channel attack and model extraction attack on analog IMC inference engine.</li>
 </ul>
@@ -89,7 +89,7 @@ layout: page
 	degree of data movement and limit memory access, we demonstrate how measurable electrical characteristics can
 	still pose a security vulnerability. We scrutinized the security vulnerability of analog IMC systems for DNN inference
 	acceleration by proposing a series of side-channel attack analysis algorithms to extract DNN architectural information. 
-	Our analysis showed it is possible to uncover the complete model architecture information without any prior knowledge of the DNN model.
+	Our analysis indicated it is possible to uncover the complete model architecture information without any prior knowledge of the DNN model.
 </p>
 <p>Using our techniques, we were able to systematically	uncover all layers in the feed-forward DNN model and successfully 
 	reconstruct the full DNN model. The proposed approach showed it is feasible to probe a ”black box” inference engine 
@@ -105,14 +105,14 @@ layout: page
 <p style="font-size: small; text-align: right;">	(Image credit to Z. Wang)</p>
 <h2>Conditional-GAN for Private Input Reconstruction by Dynamic Power Profiling</h2>
 <ul style="font-weight: bold;">
-	<li>Using a C/C++ CUDA framwork for "tiled power feature computation" during IMC chip for medical image processing.</li>
+	<li>Using a C/C++ CUDA framework for "tiled power feature computation" during IMC chip for medical image processing.</li>
 	<li>Allocating power feature matrix with meaningful data, e.g. RRAM array power and ADC conversion energy.</li>
 	<li>Power feature matrices are data set for training a conditional-GAN for reconstruct private input.</li>
 </ul>
 <p>This project is the following work of side-channel attack on DNN model. This time, the adversary is trying to steal 
-	the privite information of end users. Imagine this scenario, IMC edge devices are used for health inspection due to 
+	the private information of end users. Imagine this scenario, IMC edge devices are used for health inspection because of 
 	their advantages in low-power design. Chip designer always secure the data, but may loose the power units. It will be 
-	easier for attacker to access the power consumption by injecting trojan remotely.
+	easier for attackers to access the power consumption by injecting trojan remotely.
 </p>
 <p>Power feature is chaotic, but chaotically dependent on the input data. Training a conditional generative adversarial network 
 	(GAN) will reconstruct the private information of users.
@@ -133,7 +133,7 @@ layout: page
 	<li>The first reported work on utilizing the intrinsic randomness of self-assembly for electronics.</li>
 </ul>
 <p>Since the invention of the self-assembly, people always eager to make it more ordered, and use the ordered pattern to 
-	replace the conventional lithography. However, we did the opposited by using the randomness for the PUF, which is an
+	replace the conventional lithography. However, we did the opposite by using the randomness for the PUF, which is an
 	important hardware security primitive that has been increasingly used as the hardware root-of-trust for securing chips. 
 	The fingerprint PUF attains the requirement for uniqueness, entropy, and reliability at high temperature. 
 	Since the fingerprint PUF can be integrated at BEOL, it allows additional security features to be added at a separate 
